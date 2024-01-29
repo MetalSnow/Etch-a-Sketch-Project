@@ -2,6 +2,9 @@ let container = document.querySelector(".container");
 
 for (let i = 0; i < 256; i++) {
   let div = document.createElement("div");
+  div.addEventListener("mouseover", () => {
+    div.style.backgroundColor = "midnightblue";
+  });
   container.appendChild(div);
 }
 
@@ -9,8 +12,8 @@ function generateNewGrid() {
   let value = +prompt("Please enter the number of squares per side");
 
   // Check The value
-  if (value > 100 || value < 0 || isNaN(value)) {
-    alert("Error: Number Entred Cannot Exceed This Range 0--100!");
+  if (value > 100 || value <= 0 || isNaN(value)) {
+    alert("Error: Number Entred Cannot Exceed This Range 1--100!");
   } else {
     container.innerHTML = "";
 
@@ -21,9 +24,10 @@ function generateNewGrid() {
 
     for (let i = 0; i < SquareNumber; i++) {
       let div = document.createElement("div");
+      div.addEventListener("mouseover", () => {
+        div.style.backgroundColor = "midnightblue";
+      });
       container.appendChild(div);
     }
   }
 }
-
-generateNewGrid();
