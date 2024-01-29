@@ -1,6 +1,7 @@
 let container = document.querySelector(".container");
 let adjustBtn = document.querySelector(".adjust-btn");
 let clearBtn = document.querySelector(".clear-btn");
+let checkBox = document.querySelector("#rainbow");
 
 for (let i = 0; i < 256; i++) {
   let div = document.createElement("div");
@@ -41,3 +42,13 @@ function generateNewGrid() {
 }
 
 adjustBtn.addEventListener("click", generateNewGrid);
+
+//Raibow Color
+function GetRandomColor() {
+  let letters = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
