@@ -10,15 +10,11 @@ body {
   max-width: 500px;
   max-height: 500px;
   display: grid;
-  grid-template-columns: repeat(16, 25px [col-start]);
-  grid-template-rows: repeat(16, 25px [col-start]);
+  grid-template-columns: repeat(16, 31.25px);
+  grid-template-rows: repeat(16, 31.25px);
 }
 
 .container div {
   border: 1px solid black;
   box-sizing: border-box;
-}
-
-.container div:hover {
-  background-color: midnightblue;
 }
