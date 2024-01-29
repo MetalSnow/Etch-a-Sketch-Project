@@ -9,7 +9,7 @@ This project is an interactive Etch-a-Sketch game with a customizable grid. User
 
 ## Features
 
-- **Drawing:** Hover over squares in the grid to draw with a midnightblue color.
+- **Drawing:** Hover over squares in the grid to draw with a midnightblue color, Enjoy the rainbow mode where each square changes to a random color when hovered.
 - **Adjust Field:** Click the "Adjust Field" button to customize the grid size.
 - **Clear Field:** Click the "Clear Field" button to reset the drawing, turning all squares beige.
 
