@@ -1,9 +1,14 @@
 let container = document.querySelector(".container");
+let adjustBtn = document.querySelector(".adjust-btn");
+let clearBtn = document.querySelector(".clear-btn");
 
 for (let i = 0; i < 256; i++) {
   let div = document.createElement("div");
   div.addEventListener("mouseover", () => {
     div.style.backgroundColor = "midnightblue";
+  });
+  clearBtn.addEventListener("click", () => {
+    div.style.backgroundColor = "beige";
   });
   container.appendChild(div);
 }
@@ -27,11 +32,12 @@ function generateNewGrid() {
       div.addEventListener("mouseover", () => {
         div.style.backgroundColor = "midnightblue";
       });
+      clearBtn.addEventListener("click", () => {
+        div.style.backgroundColor = "beige";
+      });
       container.appendChild(div);
     }
   }
 }
-
-let adjustBtn = document.querySelector(".adjust-btn");
 
 adjustBtn.addEventListener("click", generateNewGrid);
