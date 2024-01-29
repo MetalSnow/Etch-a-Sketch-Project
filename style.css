@@ -4,6 +4,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+  background-color: #ff7f50cd;
+  height: 100vh;
 }
 
 .container {
@@ -12,7 +15,9 @@ body {
   display: grid;
   grid-template-columns: repeat(16, 31.25px);
   grid-template-rows: repeat(16, 31.25px);
-  border: 1px solid black;
+  border: 2px solid #272727;
+  background-color: beige;
+  box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 .container div {
