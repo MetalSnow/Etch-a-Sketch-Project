@@ -63,3 +63,12 @@ button {
   box-shadow: none;
   margin-left: 1px;
 }
+
+.inputs {
+  width: 117px;
+  border-radius: 2px;
+  background-color: #f87a4ccd;
+  display: flex;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
