@@ -1,6 +1,6 @@
 let container = document.querySelector(".container");
 
-for (let i = 0; i < 273; i++) {
+for (let i = 0; i < 256; i++) {
   let div = document.createElement("div");
   container.appendChild(div);
 }
@@ -14,7 +14,10 @@ function generateNewGrid() {
   } else {
     container.innerHTML = "";
 
-    let SquareNumber = value * value + value + 1;
+    let SquareNumber = value * value;
+    const squareSize = 500 / value;
+    container.style.gridTemplateColumns = `repeat(${value}, ${squareSize}px)`;
+    container.style.gridTemplateRows = `repeat(${value}, ${squareSize}px)`;
 
     for (let i = 0; i < SquareNumber; i++) {
       let div = document.createElement("div");
