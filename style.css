@@ -7,14 +7,16 @@ body {
 }
 
 .container {
+  max-width: 500px;
+  max-height: 500px;
   display: grid;
   grid-template-columns: repeat(16, 25px [col-start]);
+  grid-template-rows: repeat(16, 25px [col-start]);
 }
 
 .container div {
   border: 1px solid black;
-  height: 25px;
-  width: 25px;
+  box-sizing: border-box;
 }
 
 .container div:hover {
