@@ -8,6 +8,19 @@ for (let i = 0; i < 256; i++) {
   div.addEventListener("mouseover", () => {
     div.style.backgroundColor = "midnightblue";
   });
+
+  checkBox.addEventListener("change", () => {
+    div.addEventListener("mouseover", () => {
+      if (!checkBox.checked) {
+        div.style.backgroundColor = "midnightblue";
+        console.log("unchecked");
+      } else if (checkBox.checked) {
+        div.style.backgroundColor = GetRandomColor();
+        console.log("checked");
+      }
+    });
+  });
+
   clearBtn.addEventListener("click", () => {
     div.style.backgroundColor = "beige";
   });
@@ -33,6 +46,19 @@ function generateNewGrid() {
       div.addEventListener("mouseover", () => {
         div.style.backgroundColor = "midnightblue";
       });
+
+      checkBox.addEventListener("change", () => {
+        div.addEventListener("mouseover", () => {
+          if (!checkBox.checked) {
+            div.style.backgroundColor = "midnightblue";
+            console.log("unchecked");
+          } else if (checkBox.checked) {
+            div.style.backgroundColor = GetRandomColor();
+            console.log("checked");
+          }
+        });
+      });
+
       clearBtn.addEventListener("click", () => {
         div.style.backgroundColor = "beige";
       });
