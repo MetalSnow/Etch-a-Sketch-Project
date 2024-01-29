@@ -7,6 +7,7 @@ body {
   gap: 2rem;
   background-color: #ff7f50cd;
   height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -22,4 +23,33 @@ body {
 
 .container div {
   box-sizing: border-box;
+}
+
+h1 {
+  background-color: #f87a4ccd;
+  padding: 20px;
+  color: rgb(62, 55, 47);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 0;
+  font-weight: 900;
+}
+
+button {
+  margin-right: 5rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.adjust-btn {
+  background-color: darkslategray;
+  color: white;
+}
+
+.adjust-btn:hover {
+  background-color: #2f4f4fcc;
 }
