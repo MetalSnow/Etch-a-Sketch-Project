@@ -31,3 +31,7 @@ function generateNewGrid() {
     }
   }
 }
+
+let adjustBtn = document.querySelector(".adjust-btn");
+
+adjustBtn.addEventListener("click", generateNewGrid);
