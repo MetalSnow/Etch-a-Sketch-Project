@@ -12,9 +12,9 @@ body {
   display: grid;
   grid-template-columns: repeat(16, 31.25px);
   grid-template-rows: repeat(16, 31.25px);
+  border: 1px solid black;
 }
 
 .container div {
-  border: 1px solid black;
   box-sizing: border-box;
 }
