@@ -34,8 +34,13 @@ h1 {
   margin: 0;
   font-weight: 900;
 }
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
 
 button {
+  margin-bottom: 12px;
   margin-right: 5rem;
   padding: 10px 20px;
   border: none;
@@ -52,4 +57,9 @@ button {
 
 .adjust-btn:hover {
   background-color: #2f4f4fcc;
+}
+
+.clear-btn:active {
+  box-shadow: none;
+  margin-left: 1px;
 }
